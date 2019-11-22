@@ -42,3 +42,47 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 #### Tableau Emebd
 <iframe seamless frameborder="0" src="https://public.tableau.com/views/NTSBAnalysis/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450' scrolling='yes' ></iframe>
+
+#### Altair Embed
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@4"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+<div id="vis"></div>
+  <script type="text/javascript">
+    var spec = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "config": {
+        "view": {
+          "height": 300,
+          "width": 400
+        }
+      },
+      "data": {
+        "url": "https://vega.github.io/vega-datasets/data/cars.json"
+      },
+      "encoding": {
+        "color": {
+          "field": "Origin",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Horsepower",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Miles_per_Gallon",
+          "type": "quantitative"
+        }
+      },
+      "mark": "point"
+    };
+    var opt = {"renderer": "canvas", "actions": false};
+    vegaEmbed("#vis", spec, opt);
+  </script>
+</body>
+
+
