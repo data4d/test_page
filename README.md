@@ -41,7 +41,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <iframe width="600" height="400" frameborder="0" scrolling="no" src="//plot.ly/~tc922/3.embed"></iframe>
 
 #### Tableau Emebd
-<iframe seamless frameborder="0" src="https://public.tableau.com/views/NTSBAnalysis/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link" width = '650' height = '450' scrolling='yes' ></iframe>
+<iframe seamless frameborder="0" src="https://public.tableau.com/views/NTSBAnalysis/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450' scrolling='yes' ></iframe>
 
 #### Altair Embed
 <head>
